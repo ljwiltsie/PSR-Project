@@ -12,9 +12,45 @@ namespace PSR_Project
 {
     public partial class RPS_GAME : Form
     {
+        Random generator = new Random();
         public RPS_GAME()
         {
             InitializeComponent();
+            
+        }
+
+        private void RadRock_CheckedChanged(object sender, EventArgs e)
+        {
+            imgPlayer.Image = Properties.Resources.rock;
+        }
+
+        private void RadPaper_CheckedChanged(object sender, EventArgs e)
+        {
+            imgPlayer.Image = Properties.Resources.paper;
+        }
+
+        private void RadScissors_CheckedChanged(object sender, EventArgs e)
+        {
+            imgPlayer.Image = Properties.Resources.scissors_cartoon;
+        }
+
+        private void BtnPlay_Click(object sender, EventArgs e)
+        {
+            int comChoice = generator.Next(1, 3); //1=rock 2=paper 3=scissors
+
+            if (comChoice == 1)
+            {
+                imgOpponent.Image = Properties.Resources.rock;
+            }
+            else if (comChoice == 2)
+            {
+                imgOpponent.Image = Properties.Resources.paper;
+            }
+            else
+            {
+                imgOpponent.Image = Properties.Resources.scissors_cartoon;
+            }
+
         }
     }
 }

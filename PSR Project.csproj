@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rps_SU5_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evil-genius.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RPS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors-cartoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer-good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player-good.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
