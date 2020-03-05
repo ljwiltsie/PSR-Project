@@ -36,7 +36,7 @@ namespace PSR_Project
 
         private void BtnPlay_Click(object sender, EventArgs e)
         {
-            int comChoice = generator.Next(1, 3); //1=rock 2=paper 3=scissors
+            int comChoice = generator.Next(1, 4); //1=rock 2=paper 3=scissors
 
             if (comChoice == 1)
             {
@@ -46,11 +46,9 @@ namespace PSR_Project
             {
                 imgOpponent.Image = Properties.Resources.paper;
             }
-            else
+            else if (comChoice == 3)
             {
                 imgOpponent.Image = Properties.Resources.scissors_cartoon;
             }
 
         }
-    }
-}

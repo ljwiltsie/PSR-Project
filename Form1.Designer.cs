@@ -39,6 +39,7 @@
             this.radPaper = new System.Windows.Forms.RadioButton();
             this.radRock = new System.Windows.Forms.RadioButton();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgOpponent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlayer)).BeginInit();
             this.grpPlayerChoice.SuspendLayout();
@@ -49,18 +50,18 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Papyrus", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblTitle.Location = new System.Drawing.Point(179, 9);
+            this.lblTitle.Location = new System.Drawing.Point(158, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(483, 46);
+            this.lblTitle.Size = new System.Drawing.Size(519, 46);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "ROCK PAPER SCISSORS";
+            this.lblTitle.Text = "ROCK - PAPER - SCISSORS";
             // 
             // imgOpponent
             // 
             this.imgOpponent.Image = global::PSR_Project.Properties.Resources.Computer_good;
-            this.imgOpponent.Location = new System.Drawing.Point(413, 128);
+            this.imgOpponent.Location = new System.Drawing.Point(393, 120);
             this.imgOpponent.Name = "imgOpponent";
-            this.imgOpponent.Size = new System.Drawing.Size(375, 239);
+            this.imgOpponent.Size = new System.Drawing.Size(365, 224);
             this.imgOpponent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgOpponent.TabIndex = 1;
             this.imgOpponent.TabStop = false;
@@ -70,7 +71,7 @@
             this.lblComputer.AutoSize = true;
             this.lblComputer.Font = new System.Drawing.Font("Papyrus", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblComputer.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblComputer.Location = new System.Drawing.Point(562, 104);
+            this.lblComputer.Location = new System.Drawing.Point(570, 96);
             this.lblComputer.Name = "lblComputer";
             this.lblComputer.Size = new System.Drawing.Size(79, 21);
             this.lblComputer.TabIndex = 3;
@@ -79,20 +80,19 @@
             // imgPlayer
             // 
             this.imgPlayer.Image = global::PSR_Project.Properties.Resources.player_good;
-            this.imgPlayer.Location = new System.Drawing.Point(39, 128);
+            this.imgPlayer.Location = new System.Drawing.Point(47, 120);
             this.imgPlayer.Name = "imgPlayer";
             this.imgPlayer.Size = new System.Drawing.Size(340, 224);
             this.imgPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPlayer.TabIndex = 4;
             this.imgPlayer.TabStop = false;
-
             // 
             // lblPlayer
             // 
             this.lblPlayer.AutoSize = true;
             this.lblPlayer.Font = new System.Drawing.Font("Papyrus", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblPlayer.Location = new System.Drawing.Point(174, 104);
+            this.lblPlayer.Location = new System.Drawing.Point(182, 96);
             this.lblPlayer.Name = "lblPlayer";
             this.lblPlayer.Size = new System.Drawing.Size(54, 21);
             this.lblPlayer.TabIndex = 5;
@@ -169,12 +169,26 @@
             this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.BtnPlay_Click);
             // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Papyrus", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblResult.Location = new System.Drawing.Point(324, 347);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(141, 33);
+            this.lblResult.TabIndex = 8;
+            this.lblResult.Text = "YOU WIN!";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblResult.Visible = false;
+            // 
             // RPS_GAME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.grpPlayerChoice);
             this.Controls.Add(this.lblPlayer);
@@ -206,6 +220,7 @@
         private System.Windows.Forms.RadioButton radPaper;
         private System.Windows.Forms.RadioButton radRock;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
